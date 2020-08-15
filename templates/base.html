@@ -1,0 +1,74 @@
+{% load i18n %}
+{% load static %}
+
+
+<html lang="en">
+<head>
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<link rel="shortcut icon" href="{% static 'base/img/favicon.png' %}"/>
+
+	<title>{% block title %}Barış Salman{% endblock %}</title>
+
+	<style type="text/css">
+		body{
+			margin:40px auto;
+			max-width:650px;
+			line-height:1.6;
+			font-size:18px;
+			color:#CCC;
+			background-color:#111;
+			padding:0 10px
+		}
+		h1,h2,h3{
+			line-height:1.2
+		}
+		#menu li {
+			display:inline;
+			font-size:150%;
+			font-weight:bold;
+			padding:1vw;
+		}
+		a {
+			text-decoration:none;
+			color:#CCC;
+		}
+	</style>
+</head>
+
+<body>
+
+	<h1>Barış Salman</h1>
+	<hr>
+	<ul id="menu">
+		<li>
+			<a href="#">
+			Home
+			</a>
+		</li>
+		<li>
+			<a href="#">
+			Blog
+			</a>
+		</li>
+		<li>
+			<a href="{% static 'base/cv.pdf' %}">
+			CV
+			</a>
+		</li>
+		<li>
+			<a href="#">
+			Code
+			</a>
+		</li>
+	</ul>
+	<hr>
+
+	<div class="container">
+		{% block content %} {% endblock %}
+	</div>
+</body>
+</html>

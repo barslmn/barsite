@@ -1,0 +1,7 @@
+migrations/
+__pycache__/
+./static/
+./media/
+venv/
+*.pyc
+*.swp
