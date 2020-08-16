@@ -13,8 +13,8 @@ def index(request):
 
 
 def stagit(request, path):
-    # HTML_DIR = Path('/home/bar/git/html')
-    HTML_DIR = Path('/home/bar/Documents/Workbench/pybench/barsite/html')
+    HTML_DIR = Path('/home/bar/git/html')
+    # HTML_DIR = Path('/home/bar/Documents/Workbench/pybench/barsite/html')
 
     with open(HTML_DIR.joinpath(path)) as f:
         r = f.read()
